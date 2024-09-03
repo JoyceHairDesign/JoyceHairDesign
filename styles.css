@@ -417,3 +417,98 @@ table{
     line-height: 24px;
 }
 
+
+#review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+#review-link{
+    background-color:var(--primary-color1);
+    border-radius: 10px;
+    max-width:fit-content;
+    border: solid 2px pink;
+    margin-top:2vh;
+    height: 6vh;
+    width:24vw;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+#review-link:hover{
+    background-color:var(--secondary-color1);
+}
+
+
+@media screen and (max-width:768px){
+    #joyce-bio{
+        display:flex;
+        flex-direction: column;
+    }
+    #joyce1{
+        width:100%;
+        padding-bottom: 2vh;
+    }
+    #info-appointment-link{
+        width: 50vw;
+    }
+    #services{
+        display: flex;
+        flex-direction: column;
+    }
+    .service-pics{
+        width:30vw;
+    }
+
+    div.services-div p.sub-text{
+        padding:1vh 3vw;
+    }
+
+    #customer-header{
+        width:100vw;
+    }
+
+    .block-header{
+        max-width: 60%;
+    }
+
+    .customer-review{
+        font-size: .8rem;
+    }
+    
+    .reviews{
+        max-width: 80vw;
+    }
+
+    .reviews:last-of-type{
+        margin-bottom: 2vh;
+    }
+
+    #review-link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #open-hours{
+        width:50vw;
+        margin-left: -20vw;
+    }
+
+    #contact h2, #contact p{
+        font-size:1rem;
+    }
+
+}
