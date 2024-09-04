@@ -6,13 +6,12 @@
 }
 
 :root{
-    --primary-color1:#ff9ebb;
-    --secondary-color1:#ffc2d4;
-    --secondary-color2:#ffe0e9;
+    --primary-color1:#ffcbcb;
+    --secondary-color1:#ffb5b5;
     --background-color:rgba(255, 223, 244, 0.5);
-    --background-color1:#dffbff;
+    --background-color1:#407088;
     --background-color2:rgba(255, 223, 244, 1);
-    --background-color3:#a9baf0;
+    --background-color3:#132743;
 }
 
 body{
@@ -87,7 +86,7 @@ a{
     width:auto;
     height: auto;
     border-radius: 10px;
-    border:solid 1px var(--secondary-color2);
+    border:solid 1px var(--secondary-color1);
     background-color: var(--secondary-color1);
     flex-shrink: 1;
 }
@@ -98,7 +97,7 @@ a{
     width:auto;
     height: auto;
     border-radius: 10px;
-    border:solid 1px var(--secondary-color2);
+    border:solid 1px var(--secondary-color1);
     background-color: var(--primary-color1);
     flex-shrink: 1;
 }
@@ -155,7 +154,6 @@ a{
     background-color:var(--background-color1) ;
     display: flex;
     justify-content: center;
-    filter: drop-shadow(0px 0px 4px var(--background-color3));
 }
 
 #joyce-bio{
@@ -211,14 +209,13 @@ div#biography > h1.primary-text{
 
 .block-header{
     display: inline;
-    border: solid 2px black;
     max-width: 30vw;
     height: auto;
     padding: 2vh 2vw;
     text-decoration: underline;
-    background-color:var(--secondary-color2);
+    background-color:var(--secondary-color1);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 #services{
@@ -239,6 +236,7 @@ div#biography > h1.primary-text{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6vh;
 }
 
 div.services-div > h1.secondary-text{
@@ -446,7 +444,7 @@ table{
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1000px){
     #joyce-bio{
         display:flex;
         flex-direction: column;
@@ -494,6 +492,12 @@ table{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        max-width:60vw;
+        width:40vw;
+    }
+
+    #review-link-h1{
+        font-size:100%;
     }
 
     .container{
