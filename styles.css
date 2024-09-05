@@ -429,7 +429,7 @@ table{
     max-width:fit-content;
     border: solid 2px pink;
     margin-top:2vh;
-    height: 6vh;
+    height: 12vh;
     width:24vw;
     padding: 0 2vw;
     display: flex;
@@ -494,6 +494,7 @@ table{
         flex-direction: column;
         max-width:60vw;
         width:40vw;
+        height:20vh;
     }
 
     #review-link-h1{
