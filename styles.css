@@ -70,7 +70,6 @@ li{
 
 .nav-list{
     overflow: visible;
-    min-width:400px;
     flex-shrink: 1;
 }
 
@@ -83,7 +82,7 @@ a{
 .block-link{
     display:block;
     padding:1vh;
-    width:auto;
+    width: auto;
     height: auto;
     border-radius: 10px;
     border:solid 1px var(--secondary-color1);
@@ -156,7 +155,19 @@ a{
     justify-content: center;
 }
 
+
 #joyce-bio{
+    background-color:var(--background-color2);
+    padding: 10vh 3vw;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 186, 215, 0.685));
+    grid-template-columns: 1fr 1fr;
+    display:grid;
+    max-width: 70vw;
+}
+
+
+#joyce-bio1{
     background-color:var(--background-color2);
     padding: 10vh 3vw;
     border-radius: 20px;
@@ -443,16 +454,55 @@ table{
     background-color:var(--secondary-color1);
 }
 
+#mobile-about-link{
+    display: none;
+}
 
 @media screen and (max-width:1000px){
     #joyce-bio{
         display:flex;
         flex-direction: column;
+        width:100vw;
+        max-width: 100%;
+        margin:none;
+        display: none;
     }
+
+    #joyce-bio1{
+        display:flex;
+        flex-direction: column;
+        width:100vw;
+        max-width: 100%;
+        margin:none;
+    }
+
+    .nav-list{
+        overflow: visible;
+        flex-shrink: 1;
+        width:60vw;
+    }
+    
+    div.nav-list a.block-link{
+        height:3vh;
+    }
+    
+    div.nav-list p{
+        font-size: .5rem;
+    }
+
+    #mobile-about-link{
+        display: block;
+    }
+
+    #info{
+        padding: none;
+    }
+
     #joyce1{
         width:100%;
         padding-bottom: 2vh;
     }
+
     #info-appointment-link{
         width: 50vw;
     }
@@ -514,6 +564,11 @@ table{
 
     #contact h2, #contact p{
         font-size:1rem;
+    }
+
+    #calendly-integration{
+        margin:5vh 0;
+        overflow:visible;
     }
 
 }
