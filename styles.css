@@ -448,7 +448,11 @@ table{
     flex-direction: column;
 }
 
-
+#calendly-integration{
+    margin-top:2vh;
+    margin-bottom: -15vh;
+    overflow:visible;
+}
 
 #review-link:hover{
     background-color:var(--secondary-color1);
@@ -567,7 +571,8 @@ table{
     }
 
     #calendly-integration{
-        margin:5vh 0;
+        margin-top:5vh;
+        margin-bottom: 2vh;
         overflow:visible;
     }
 
