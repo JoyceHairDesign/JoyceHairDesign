@@ -434,6 +434,7 @@ table{
     text-decoration: underline;
 }
 
+
 #review-link{
     background-color:var(--primary-color1);
     border-radius: 10px;
@@ -449,9 +450,23 @@ table{
 }
 
 #calendly-integration{
-    margin-top:2vh;
+    margin-top:10vh;
     margin-bottom: -15vh;
     overflow:visible;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid black;
+    height: 1200px;
+}
+
+.calendly-text{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5vh;
+}
+
+.calendly-inline-widget{
+    width:50vw;
 }
 
 #review-link:hover{
@@ -520,6 +535,11 @@ table{
 
     div.services-div p.sub-text{
         padding:1vh 3vw;
+    }
+
+    .calendly-text{
+        margin-top: 6vh;
+        margin-bottom: 2vh;
     }
 
     #customer-header{
