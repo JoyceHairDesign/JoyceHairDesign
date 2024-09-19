@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Joyce's Hair Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEECWSEF9V">
+        </script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KEECWSEF9V');
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" aria-label="Main Navigation">
+                <a class="imagelink" href="main.html">
+                    <img src="JoycesHairDesign.png" width="100" alt="Joyce's Hair Design Logo" class="logoimg">
+                </a>
+                <button class="menu-btn" id="menu-btn" aria-label="Open Menu">
+                    &#9776;
+                </button>
+                <ul class="nav-list" id="nav-list">
+                    <li><a class="block-link" href="main.html">Home</a></li>
+                    <li><a class="block-link" href="about.html">About</a></li>
+                    <li><a class="block-link" href="appointment.html">Book An Appointment</a></li>
+                    <li><a class="block-link" href="blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <h1 class="primary-text">Coming Soon!</h1>
+        </main>
+        </footer>
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const navList = document.getElementById('nav-list');
+        
+            menuBtn.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+        </script> 
+    </body>
+</html>
